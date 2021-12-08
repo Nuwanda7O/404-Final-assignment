@@ -10,7 +10,7 @@
 <div>&nbsp;&nbsp;&nbsp;&nbsp;人工智能潮热度不减，AI应用已经在量化领域落地，智能量化选股受到越来越多人的青睐，为此我们系统也提供了智能选股的入口，与其他市面上系统对股票信息分析不同，该系统将会加入对用户画像的分析，更加全面的为用户推荐股票。</div> 
 
 ## <span id='2'>项目功能</span>
-
+![功能图](https://github.com/Nuwanda7O/404-Final-assignment/blob/main/function.png?raw=true)
 ## <span id='3'>项目技术</span>
 - 项目部署在阿里云服务器上 系统`CentOS`
 - 后端采用`node.js` 使用`express`框架的ejs渲染同步数据到前端页面
