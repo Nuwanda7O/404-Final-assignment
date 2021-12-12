@@ -1,0 +1,57 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mymain {
+    margin: 0 auto;
+    background-color: #eee;
+    height: 100%;
+}
+
+/* big diagram religion*/
+#bd {
+    background-color: white;
+    height: 70%;
+    margin: 0 100px;
+}
+
+/* small diagram religion*/
+#sd {
+    background-color: #eee;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* the 3 small diagrams */
+.ds {
+    background-color: white;
+    width: 30%;
+    height: 90%;
+}
+
+/* topic in diagram */
+.t {
+    height: 40px;
+    width: 70%;
+    background: #ffffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffffff, rgb(251,120,7));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffffff, rgb(251,120,7));
+}
+
+#data{
+    padding: 10px;
+
+}
+/* the big chart */
+#bc{
+    background-color: white;
+    height: 500px;
+}

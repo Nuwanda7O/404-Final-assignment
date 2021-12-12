@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="盛世金磐" />
+    <meta name="Keywords" content="金融理财" />
+    <title>股吧交流</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/myCss.css">
+    <script src="./js/myJS.js"></script>
+</head>
+
+<body style="background-color: #eee;">
+    <header>
+        <iframe style="height: 123px" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+            src="head.html" width="100%"></iframe>
+    </header>
+    <!--隐藏在header下边的图层-->
+    <!--头部结束-->
+    <!--隐藏在header下边的图层-->
+    <div class="bannerTop"></div>
+    <div class="clear"></div>
+    <div class="myBody">
+        <div style="background-color: #eee; height: 20px;"></div>
+        <ul id="myTab">
+            <li>
+                <a href="#" style="color: #fe8c00;">关注</a>
+            </li>
+            <li>
+                <a href="#">推荐</a>
+            </li>
+            <li>
+                <a href="#">热榜</a>
+            </li>
+            <li>
+                <a href="#">视频</a>
+            </li>
+        </ul>
+        <div id="follow" class="myContent">
+            <span>你还没有关注的人</span>
+            <input class="myinput" type="text" name="input" id="email" required>
+        </div>
+        <div id="recommend" class="myContent">
+
+            <% for(var i=0;i<news.length;i++) { %>
+
+                <div class="recommend_item">
+                    <div class="question">
+                        <%= news[i].title %>
+                    </div>
+                    <div class="answer">
+                        <%= news[i].content %>
+                    </div>
+                    <div class="myBar">
+
+                        <form action="/addforum" method="get">
+
+
+                         
+                            <input type="text" name="opinion" id="opinion" placeholder="请输入评论">
+                            <input type="submit" name="submit" value=<%=news[i].tag%>>
+
+
+                        </form>
+                        <div class="remarklogo">评论区</div>
+                        <ul class="myremarkshow">
+
+                            <% for(var a=0;a<forum.length;a++) { %>
+
+                                <% if(i==forum[a].tag) {%>
+
+                                    <li>
+                                        <%= forum[a].account %>
+                                            <%= forum[a].opinion%>
+                                    </li>
+                                    <% } %>
+
+                                        <%}%>
+
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <% } %>
+
+        </div>
+        <div id="hot" class="myContent">
+            <form action="/addnews" method="get">
+
+                <label>
+                    <span>添加标题:</span>
+                    <input id="port" type="text" name="title" placeholder="请输入标题" />
+                </label>
+
+                <label>
+                    <span>描述 :</span>
+                    <textarea id="content" name="content" placeholder="请输入内容"></textarea>
+                </label>
+
+                <label>
+                    <span>&nbsp;</span>
+                    <input type="submit" name="publish" value="发表">
+                </label>
+            </form>
+
+        </div>
+        <div id="video" class="myContent">
+            做不完喽
+        </div>
+    </div>
+    <!-- <div class="clear"></div> -->
+    <div class="footeriframe">
+        <iframe scrolling="no" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+            src="footer.html" width="100%">
+        </iframe>
+    </div>
+    <!--網站底部開始-->
+    <!--底部版權聲明-->
+</body>
+
+</html>

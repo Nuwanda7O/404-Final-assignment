@@ -1,0 +1,169 @@
+.myBody{
+    background-color: white;
+    height:1000px;
+    width: 1000px;
+    align-content: center;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+    position: relative;
+}
+#myTab li a{
+	width: 80px;
+	height: 40px;
+    padding-left: 50px;
+	color: rgb(87, 83, 83);
+	float: left;
+    display:block;
+    font-size: 20px;
+    padding-top: 25px;
+}
+#myTab li a:hover{
+    color: #fe8c00;
+}
+.changecolor{
+    color: #fe8c00;
+}
+.myContent{
+    position: absolute;
+    top:100px;
+    width: 1000px;
+    height:900px
+}
+.displaynone{
+    display: none;
+}
+#follow{
+    /* background-color: green; */
+    border-top: 1px solid #eee;
+    overflow: scroll;
+}
+.follow_item{
+    /* background-color: pink; */
+    margin: 30px;
+    border-bottom:1px solid #eee;
+    padding-bottom: 40px;
+    position: relative;
+}
+#recommend{
+    /* background-color: green; */
+    border-top: 1px solid #eee;
+    overflow: scroll;
+}
+.recommend_item{
+    /* background-color: pink; */
+    margin: 30px;
+    border-bottom:1px solid #eee;
+    padding-bottom: 40px;
+    position: relative;
+}
+#hot{
+    /* background-color: green; */
+    border-top: 1px solid #eee;
+    overflow: scroll;
+}
+.hot_item{
+    /* background-color: pink; */
+    margin: 30px;
+    border-bottom:1px solid #eee;
+    padding-bottom: 40px;
+    position: relative;
+}
+#video{
+    /* background-color: green; */
+    border-top: 1px solid #eee;
+    overflow: scroll;
+}
+.video_item{
+    /* background-color: pink; */
+    margin: 30px;
+    border-bottom:1px solid #eee;
+    padding-bottom: 40px;
+    position: relative;
+}
+.question{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 10px;
+}
+.answer{
+    color: rgb(112, 100, 100);
+}
+
+/* 打星 */
+.rating {
+    margin-top: 40px;
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: start;
+
+    flex-direction: row-reverse;
+
+    font-size: 32px;
+}
+.rating__star:hover,
+.rating__star:hover ~ .rating__star {
+    color: transparent;
+}
+.rating__star:hover:before,
+.rating__star:hover ~ .rating__star:before {
+    color: #fe8c00;
+    content: '\2605';
+    left: 0;
+    position: absolute;
+}
+.rating__star {
+    /* Reset styles for button */
+    background-color: transparent;
+    border: transparent;
+    margin: 0 2px;
+    padding: 0;
+    /* Used to position the hover state */
+    position: relative;
+}
+
+.myremark{
+    background-color: white;
+    float: right;
+    position: absolute;
+    border: 2px solid black;
+    left: 800px;
+    top:-5px;
+    border-radius: 10px;
+}
+.myremark:hover{
+    cursor:pointer;
+}
+.myinput{
+    float: right;
+    position: absolute;
+    left: 600px;
+    top: 0px;
+}
+.myremarkshow{
+    padding-top: 30px;
+}
+.myremarkshow li{
+    margin: 5px 200px;
+    /* text-align: center; */
+    /* background-color: pink; */
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    border-left: 1px solid #eee;
+}
+.clear{
+    clear: both;
+}
+.myBar{
+    position: relative;
+}
+.remarklogo{
+    position: absolute;
+    left: 120px;
+    top:70px;
+    font-size: 20px;
+    background-color: #f8dabe;
+    color: rgb(241, 144, 15);
+    border-radius: 5px;
+    
+}

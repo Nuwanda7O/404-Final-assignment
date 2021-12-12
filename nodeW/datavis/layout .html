@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+
+            width: 800px;
+
+
+        }
+
+        #bd {
+            width: 900px;
+            height: 450px;
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            margin-left: -300px;
+            margin-top: -218px;
+        }
+
+        #sd {
+            width: 400px;
+            height: 300px;
+            margin-top: 475px;
+            margin-left: 50px;
+        }
+
+        #li {
+            width: 400px;
+            height: 300px;
+            margin-top: -300px;
+            margin-left: 550px;
+
+        }
+
+        #data {
+            width: 400px;
+            height: 300px;
+            margin-top: -300px;
+            margin-left: 1050px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+        /* var filename='<%- (filename) %>'
+        console.log(filename) */
+     
+        let a = "http://hq.sinajs.cn/list=sh601006"
+    </script>
+    <script type="text/javascript" src="http://hq.sinajs.cn/list=sh601006" charset="gb2312"></script>
+
+
+
+    <div id="bd"></div>
+    <div id="sd"></div>
+    <div id="li"></div>
+    <div id="data">
+        <h3>股票名字:{{message1}}</h3>
+        <h3>今日开盘价:{{message2}}</h3>
+        <h3>昨日收盘价:{{message3}}</h3>
+        <h3>当前价格:{{message4}}</h3>
+        <h3>今日最高价:{{message5}}</h3>
+        <h3>今日最低价:{{message6}}</h3>
+        <!-- <h3>竞买价，即“买一”报价:{{message7}}</h3> -->
+    </div>
+
+
+
+
+
+    <script src="js/vue.js"></script>
+    <script src="d3/d3.js" charset="utf-8"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/k.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/line.js"></script>
+    <script src="js/count.js"></script>
+</body>
+
+</html>

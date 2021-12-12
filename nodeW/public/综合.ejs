@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/listcss.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body style="background-color: rgba(204,204,204,0.23)">
+
+
+    <div class="fav_list">
+        <div data-v-357a65ed="" class="fav_list_box">
+            <div class="fav_list_title">
+                <h3 class="fav_list_title_h3">我的收藏</h3>
+                <div class="fav_num">
+                    共<span>5</span>条
+                </div>
+            </div>
+            <div class="my_fav_con">
+                <div>
+
+                    <ul class="my_fav_list">
+
+                        <% for(var a=0;a<shares.length;a++) { %>
+
+
+                            <li class="my_fav_list_li" id="">
+
+                                <a class="my_fav_list_a" href="datavis" name=<%= shares[a].scode %> target="_blank">
+                                    <%= shares[a].sname %>
+                                    <%= shares[a].sdes %>
+                                </a>
+
+                                <label class="my_fav_list_label">
+                                    <span> <%= shares[a].scode %></span>
+                                    <a class="cancel_fav"><em> <%= shares[a].skind %></em></a>
+                                </label>
+                            </li>
+
+                            <% } %>
+                    </ul>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

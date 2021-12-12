@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/public.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+<link type="text/css" rel="stylesheet" href="css/style2.css" />
+<link href="css/zzsc.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function(){ 
+        if (window.parent.location.pathname=='/first.html'){
+        $("#1").attr('class','');
+          $("#2").attr('class','');
+          $("#3").attr('class','');
+          $("#4").attr('class','');
+          $("#5").attr('class','');
+        $("#1").attr('class','activeNav');
+    }
+    
+        if (window.parent.location.pathname=='/Informationdisplay'){
+        $("#1").attr('class','');
+          $("#2").attr('class','');
+          $("#3").attr('class','');
+          $("#4").attr('class','');
+          $("#5").attr('class','');
+        $("#2").attr('class','activeNav');
+    }
+    if (window.parent.location.pathname=='/Intelligent'){
+        $("#1").attr('class','');
+          $("#2").attr('class','');
+          $("#3").attr('class','');
+          $("#4").attr('class','');
+          $("#5").attr('class','');
+        $("#3").attr('class','activeNav');
+    }
+    if (window.parent.location.pathname=='/information.html'){
+        $("#1").attr('class','');
+          $("#2").attr('class','');
+          $("#3").attr('class','');
+          $("#4").attr('class','');
+          $("#5").attr('class','');
+        $("#4").attr('class','activeNav');
+    }
+    if (window.parent.location.pathname=='/forum'){
+        $("#1").attr('class','');
+          $("#2").attr('class','');
+          $("#3").attr('class','');
+          $("#4").attr('class','');
+          $("#5").attr('class','');
+        $("#5").attr('class','activeNav');
+    }
+    });
+    </script>
+<body>
+<!--头部开始-->
+<header>
+    <div style="position: absolute;width: 100%;height: 30px;background: #ECECEC">
+        <a style="position: absolute;width: 20%;margin-left: 80%; font-size: 14px;color: #B68555;line-height:30px;">电子合同
+            &nbsp;&nbsp;&nbsp;&nbsp;入金</a>
+    </div>
+    <!--头部菜单导航-->
+    <div class="headerMiddle">
+        <div class="hLogo">
+            <a href="first.html">
+                <img src="images/logo.png" height="60"/>
+            </a>
+        </div>
+
+        <nav class="otherNav">
+            <ul>
+            
+                <li>
+                    <a id='1' href="first.html"  target="_top">网站首页</a>
+                </li>
+                <li>
+                    <a id='2' href="Informationdisplay" target="_top">信息展示</a>
+                </li>
+                <li>
+                    <a id='3' href="Intelligent" class="activeNav" target="_top">智能推荐</a>
+                </li>
+                <li>
+                    <a id='4' href="information.html" target="_top">资讯推送</a>
+                </li>
+                <li>
+                    <a id='5' href="forum" target="_top">股吧交流</a>
+                </li>
+            </ul>
+            <!--头部语言版本切换按钮-->
+            <div class="languageBtn">
+                中文
+            </div>
+            <!--头部语言版本切换按钮-->
+        </nav>
+    </div>
+    <!--头部菜单导航-->
+</header>
+</body>
+</html>

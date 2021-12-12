@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="盛世金磐" />
+    <meta name="Keywords" content="金融理财" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/myCss.css">
+
+    <link rel="stylesheet" type="text/css" href="css/listcss.css" />
+
+    <script src="./js/myJS.js"></script>
+</head>
+
+<body style="background-color: #eee;">
+    <header>
+        <iframe style="height: 123px" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+            src="head.html" width="100%"></iframe>
+    </header>
+    <!--隐藏在header下边的图层-->
+    <!--头部结束-->
+    <!--隐藏在header下边的图层-->
+    <div class="bannerTop"></div>
+    <div class="clear"></div>
+    <div class="myBody">
+        <div style="background-color: #eee; height: 20px;"></div>
+        <ul id="myTab">
+            <li>
+                <a href="#" style="color: #fe8c00;">上证</a>
+            </li>
+            <li>
+                <a href="#">深证</a>
+            </li>
+            <li>
+                <a href="#">科创板</a>
+            </li>
+            <li>
+                <a href="#">创业板</a>
+            </li>
+        </ul>
+
+
+
+        <div id="recommend" class="myContent">
+            <div class="fav_list">
+                <div data-v-357a65ed="" class="fav_list_box">
+                    <div class="fav_list_title">
+                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <div class="fav_num">
+                            共<span>
+                                <% shares.length%>
+                            </span>条
+                        </div>
+                    </div>
+                    <div class="my_fav_con">
+                        <div>
+                            <ul class="my_fav_list">
+                                <% for(var a=0;a<shares.length;a++) { %>
+                                    <% if(shares[a].skind=='深证' ) {%>
+                                        <li class="my_fav_list_li" id="">
+
+                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                                target="_blank">
+                                                <%= shares[a].sname %>
+                                                    <%= shares[a].sdes %>
+                                            </a>
+                                            <form action="/datavis" method="get">
+                                                <input type="submit" value=<%=shares[a].scode %> name="scode">
+                                            </form>
+                                            <a class="cancel_fav">
+                                                <%= shares[a].skind %>
+                                            </a>
+
+                                        </li>
+                                        <% } %>
+                                            <% } %>
+
+                            </ul>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="follow" class="myContent">
+            <div class="fav_list">
+                <div data-v-357a65ed="" class="fav_list_box">
+                    <div class="fav_list_title">
+                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <div class="fav_num">
+                            共<span>
+                                <% shares.length%>
+                            </span>条
+                        </div>
+                    </div>
+                    <div class="my_fav_con">
+                        <div>
+                            <ul class="my_fav_list">
+                                <% for(var a=0;a<shares.length;a++) { %>
+                                    <% if(shares[a].skind=='上证' ) {%>
+                                        <li class="my_fav_list_li" id="">
+
+                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                                target="_blank">
+                                                <%= shares[a].sname %>
+                                                    <%= shares[a].sdes %>
+                                            </a>
+                                            <form action="/datavis" method="get">
+                                                <input type="submit" value=<%=shares[a].scode %> name="scode">
+                                            </form>
+                                            <a class="cancel_fav">
+                                                <%= shares[a].skind %>
+                                            </a>
+
+                                        </li>
+                                        <% } %>
+                                            <% } %>
+                            </ul>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="hot" class="myContent">
+            <div class="fav_list">
+                <div data-v-357a65ed="" class="fav_list_box">
+                    <div class="fav_list_title">
+                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <div class="fav_num">
+                            共<span>
+                                <% shares.length%>
+                            </span>条
+                        </div>
+                    </div>
+                    <div class="my_fav_con">
+                        <div>
+                            <ul class="my_fav_list">
+                                <% for(var a=0;a<shares.length;a++) { %>
+                                    <% if(shares[a].skind=='科创板' ) {%>
+                                        <li class="my_fav_list_li" id="">
+
+                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                                target="_blank">
+                                                <%= shares[a].sname %>
+                                                    <%= shares[a].sdes %>
+                                            </a>
+                                            <form action="/datavis" method="get">
+                                                <input type="submit" value=<%=shares[a].scode %> name="scode">
+                                            </form>
+                                            <a class="cancel_fav">
+                                                <%= shares[a].skind %>
+                                            </a>
+
+                                        </li>
+                                        <% } %>
+                                            <% } %>
+                            </ul>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="video" class="myContent">
+            <div class="fav_list">
+                <div data-v-357a65ed="" class="fav_list_box">
+                    <div class="fav_list_title">
+                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <div class="fav_num">
+                            共<span>
+                                <% shares.length%>
+                            </span>条
+                        </div>
+                    </div>
+                    <div class="my_fav_con">
+                        <div>
+                            <ul class="my_fav_list">
+                                <% for(var a=0;a<shares.length;a++) { %>
+                                    <% if(shares[a].skind=='创业板' ) {%>
+                                        <li class="my_fav_list_li" id="">
+
+                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                                target="_blank">
+                                                <%= shares[a].sname %>
+                                                    <%= shares[a].sdes %>
+                                            </a>
+                                            <form action="/datavis" method="get">
+                                                <input type="submit" value=<%=shares[a].scode %> name="scode">
+                                            </form>
+                                            <a class="cancel_fav">
+                                                <%= shares[a].skind %>
+                                            </a>
+
+                                        </li>
+                                        <% } %>
+                                            <% } %>
+                            </ul>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="clear"></div> -->
+    <div class="footeriframe">
+        <iframe scrolling="no" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+            src="footer.html" width="100%">
+        </iframe>
+    </div>
+    <!--網站底部開始-->
+    <!--底部版權聲明-->
+</body>
+
+</html>
