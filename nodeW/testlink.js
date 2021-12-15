@@ -23,7 +23,7 @@ const { find } = require('async');
 var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'wk020924',
+  password: 'root',
   port: '3306',
   //数据库的名字
   database: 'web'
@@ -555,10 +555,10 @@ app.get('/Intelligent', (req, res, next) => {
     st = std[0]
     sd = std[1]
 
-    st = st.toString().split("\r\n")
+    st = st.toString().split("\n")
 
     sd = sd.toString().split(']')
-    sd = sd[0].toString().split('\r\n')
+    sd = sd[0].toString().split('\n')
     sd = sd.toString().split(' ')
     sd = sd.toString().split(',')
     //清除空字符
