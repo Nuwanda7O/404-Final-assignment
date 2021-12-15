@@ -1,0 +1,147 @@
+/* CSS区分大小写 */
+ 
+/* 通用样式 */
+*{
+    margin:0;
+    padding:0;
+}
+ 
+.NameList{
+    margin:6px 0 0 6px; /* 上右下左 */
+    background-color:#f3f3f3;
+}
+.NameList li{
+    list-style:none;    /* 去除列表项前的标号 */
+    width:auto;
+    height:50px;
+    line-height:50px;
+    background-color:white;
+    /* border:1px solid #ededf5; */ /* 线宽 样式 颜色 */
+    margin-top:1px;
+    padding:5px 0;  /* 上下、左右 */
+    }
+.NameList span.NameIcon{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    background: blue;
+    color:white;
+    font-size:35px;
+    text-align:center;  /* 文字居中 */
+    float:left;
+}
+.NameList span.girl
+{
+    background:#ff07fa;
+}
+.NameList img{
+    width:50px;
+    height:50px;
+    float:left;
+}
+.NameList p{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    background: blue;
+    color:white;
+    font-size:35px;
+    text-align:center;
+    float:left;
+}
+.NameList span.name{
+    float:left;
+    width:110px;
+    height:100%;
+    padding-left: 30px;
+    margin-left:5px;
+    font-size: 20px;
+    overflow:hidden;    /* 溢出时隐藏溢出部分 */
+}
+.NameList span.address{
+    float:right;
+    padding-right: 100px;
+    font-size:10px;
+}
+#anniu {
+    margin: 20px;
+}
+#anniu {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+#anniu {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+#anniu {
+    background: rgb(6, 14, 131);
+    background: linear-gradient(0deg, rgb(211, 120, 35) 0%, rgb(228, 136, 32) 100%);
+    border: none;
+}
+#anniu:hover {
+    background: rgb(0, 3, 255);
+    background: linear-gradient(0deg, rgb(228, 163, 23) 0%, rgb(235, 140, 17) 100%);
+}
+#pl{
+    padding-left: 100px;
+}
+#opinion{
+    width: 500px;
+}
+#anniu1 {
+    margin: 20px;
+}
+#anniu1 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+#anniu1 {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+#anniu1 {
+    background: rgb(6, 14, 131);
+    background: linear-gradient(0deg, rgb(211, 120, 35) 0%, rgb(228, 136, 32) 100%);
+    border: none;
+}
+#anniu1:hover {
+    background: rgb(0, 3, 255);
+    background: linear-gradient(0deg, rgb(228, 163, 23) 0%, rgb(235, 140, 17) 100%);
+}
+#content{
+    width: 805px;
+    height: 383px;
+
+}
+#port{
+    width: 500px;
+}

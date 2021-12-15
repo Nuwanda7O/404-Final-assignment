@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="css/myCss.css">
-    <script src="./js/myJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <script src="js/forum.js"></script>
 </head>
 
 <body style="background-color: #eee;">
@@ -24,27 +25,53 @@
     <div class="clear"></div>
     <div class="myBody">
         <div style="background-color: #eee; height: 20px;"></div>
-        <ul id="myTab">
+        <ul id="myTab" style.display='none' style="color: #d4d4d3;">
             <li>
-                <a href="#" style="color: #fe8c00;">关注</a>
+                <a id='gz' href="#" ">关注</a>
             </li>
             <li>
-                <a href="#">推荐</a>
+                <a id='tj' href="#" style="color: #fe8c00;">推荐</a>
             </li>
             <li>
-                <a href="#">热榜</a>
+                <a id='fb' href="#" ">发布</a>
             </li>
-            <li>
-                <a href="#">视频</a>
-            </li>
+            
         </ul>
         <div id="follow" class="myContent">
-            <span>你还没有关注的人</span>
+            <div>
+                <ul class="NameList">        
+                    <li>
+                        <img src="/images/tx2.jpg"/>
+                        <span class="name">布莱恩</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx3.jpg"/>
+                        <span class="name">张卫东</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx4.jpg"/>
+                        <span class="name">古枫</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx1.jpg"/>
+                        <span class="name">陈潇</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx5.jpg"/>
+                        <span class="name">阿克蒙德 李察</span>
+
+                    </li>
+                </ul>
+                </div>
             <input class="myinput" type="text" name="input" id="email" required>
         </div>
         <div id="recommend" class="myContent">
 
-            <% for(var i=0;i<news.length;i++) { %>
+            <% for(var i=news.length-1;i>=0;i--) { %>
 
                 <div class="recommend_item">
                     <div class="question">
@@ -55,12 +82,13 @@
                     </div>
                     <div class="myBar">
 
-                        <form action="/addforum" method="get">
+                        <form id='pl'action="/addforum" method="get">
 
 
                          
-                            <input type="text" name="opinion" id="opinion" placeholder="请输入评论">
-                            <input type="submit" name="submit" value=<%=news[i].tag%>>
+                            <input type="text" name="opinion" id="opinion" placeholder="请输入评论" style="border:1px black solid;margin:25px auto; " size="60" >
+                            请点击按钮提交：
+                            <input type="submit" name="submit" id='anniu'value=<%=news[i].tag%>  >
 
 
                         </form>
@@ -90,26 +118,23 @@
         <div id="hot" class="myContent">
             <form action="/addnews" method="get">
 
-                <label>
+                <div>
                     <span>添加标题:</span>
-                    <input id="port" type="text" name="title" placeholder="请输入标题" />
-                </label>
+                    
+                    <input id="port" type="text" name="title" placeholder="请输入标题" style="border:1px black solid" />
+                </div>
+                <div >描述 :</div>
+                <div >
 
-                <label>
-                    <span>描述 :</span>
-                    <textarea id="content" name="content" placeholder="请输入内容"></textarea>
-                </label>
+                    <TEXTAREA id="content" name="content" placeholder="请输入内容" style="border:1px black solid;"></TEXTAREA>
+                    <input style="position: relative;;" type="submit" id='anniu1' name="publish" value="发表">
+                </div>
 
-                <label>
-                    <span>&nbsp;</span>
-                    <input type="submit" name="publish" value="发表">
-                </label>
+
             </form>
 
         </div>
-        <div id="video" class="myContent">
-            做不完喽
-        </div>
+        
     </div>
     <!-- <div class="clear"></div> -->
     <div class="footeriframe">

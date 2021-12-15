@@ -9,6 +9,7 @@
         body {
 
             width: 800px;
+            background-color: rgb(245,245,245);
 
 
         }
@@ -19,30 +20,33 @@
             position: absolute;
             top: 30%;
             left: 40%;
-            margin-left: -300px;
+            margin-left: -130px;
             margin-top: -218px;
         }
 
         #sd {
-            width: 400px;
+            width: 500px;
             height: 300px;
             margin-top: 475px;
-            margin-left: 50px;
+            margin-left: 150px;
         }
 
         #li {
             width: 400px;
             height: 300px;
             margin-top: -300px;
-            margin-left: 550px;
+            margin-left: 850px;
 
         }
 
         #data {
-            width: 400px;
+            width: 220px;
             height: 300px;
-            margin-top: -300px;
-            margin-left: 1050px;
+            margin-top: -690px;
+            margin-left: 100px;
+            border: 1px grey solid;
+            border-radius: 15%;
+            padding-left: 30px;
         }
     </style>
 
@@ -51,12 +55,13 @@
 <body>
 
     <script>
-        /* var filename='<%- (filename) %>'
-        console.log(filename) */
-     
-        let a = "http://hq.sinajs.cn/list=sh601006"
+        var filename='data/000001.csv'
+        
+        console.log(filename)
+        
     </script>
-    <script type="text/javascript" src="http://hq.sinajs.cn/list=sh601006" charset="gb2312"></script>
+    <script type="text/javascript" src='http://hq.sinajs.cn/list=sh000001' charset="gb2312">
+    </script>
 
 
 

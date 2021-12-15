@@ -48,11 +48,11 @@
             <div class="fav_list">
                 <div data-v-357a65ed="" class="fav_list_box">
                     <div class="fav_list_title">
-                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <h3 class="fav_list_title_h3">股票列表</h3>
                         <div class="fav_num">
-                            共<span>
+                            
                                 <% shares.length%>
-                            </span>条
+                            
                         </div>
                     </div>
                     <div class="my_fav_con">
@@ -62,11 +62,14 @@
                                     <% if(shares[a].skind=='深证' ) {%>
                                         <li class="my_fav_list_li" id="">
 
-                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                            <p class="my_fav_list_a" href="" name=<%=shares[a].scode %>
                                                 target="_blank">
-                                                <%= shares[a].sname %>
-                                                    <%= shares[a].sdes %>
-                                            </a>
+
+                                                <%= shares[a].sname %>&nbsp;
+                                                <div style="position: relative; left: 30px;"><%= shares[a].sdes %></div>
+                                                    
+
+                                            </p>
                                             <form action="/datavis" method="get">
                                                 <input type="submit" value=<%=shares[a].scode %> name="scode">
                                             </form>
@@ -90,11 +93,11 @@
             <div class="fav_list">
                 <div data-v-357a65ed="" class="fav_list_box">
                     <div class="fav_list_title">
-                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <h3 class="fav_list_title_h3">股票列表</h3>
                         <div class="fav_num">
-                            共<span>
+                            
                                 <% shares.length%>
-                            </span>条
+                            
                         </div>
                     </div>
                     <div class="my_fav_con">
@@ -103,12 +106,16 @@
                                 <% for(var a=0;a<shares.length;a++) { %>
                                     <% if(shares[a].skind=='上证' ) {%>
                                         <li class="my_fav_list_li" id="">
-
-                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                            
+                                            <p class="my_fav_list_a" href="" name=<%=shares[a].scode %>
                                                 target="_blank">
-                                                <%= shares[a].sname %>
-                                                    <%= shares[a].sdes %>
-                                            </a>
+
+                                                <%= shares[a].sname %>&nbsp;
+                                                <div style="position: relative; left: 30px;"><%= shares[a].sdes %></div>
+                                                    
+
+                                            </p>
+                                            
                                             <form action="/datavis" method="get">
                                                 <input type="submit" value=<%=shares[a].scode %> name="scode">
                                             </form>
@@ -131,11 +138,11 @@
             <div class="fav_list">
                 <div data-v-357a65ed="" class="fav_list_box">
                     <div class="fav_list_title">
-                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <h3 class="fav_list_title_h3">股票列表</h3>
                         <div class="fav_num">
-                            共<span>
+                            
                                 <% shares.length%>
-                            </span>条
+                            
                         </div>
                     </div>
                     <div class="my_fav_con">
@@ -145,11 +152,14 @@
                                     <% if(shares[a].skind=='科创板' ) {%>
                                         <li class="my_fav_list_li" id="">
 
-                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                            <p class="my_fav_list_a" href="" name=<%=shares[a].scode %>
                                                 target="_blank">
-                                                <%= shares[a].sname %>
-                                                    <%= shares[a].sdes %>
-                                            </a>
+
+                                                <%= shares[a].sname %>&nbsp;
+                                                <div style="position: relative; left: 30px;"><%= shares[a].sdes %></div>
+                                                    
+
+                                            </p>
                                             <form action="/datavis" method="get">
                                                 <input type="submit" value=<%=shares[a].scode %> name="scode">
                                             </form>
@@ -171,11 +181,11 @@
             <div class="fav_list">
                 <div data-v-357a65ed="" class="fav_list_box">
                     <div class="fav_list_title">
-                        <h3 class="fav_list_title_h3">我的收藏</h3>
+                        <h3 class="fav_list_title_h3">股票列表</h3>
                         <div class="fav_num">
-                            共<span>
+                           
                                 <% shares.length%>
-                            </span>条
+                           
                         </div>
                     </div>
                     <div class="my_fav_con">
@@ -185,11 +195,14 @@
                                     <% if(shares[a].skind=='创业板' ) {%>
                                         <li class="my_fav_list_li" id="">
 
-                                            <a class="my_fav_list_a" href="" name=<%=shares[a].scode %>
+                                            <p class="my_fav_list_a" href="" name=<%=shares[a].scode %>
                                                 target="_blank">
-                                                <%= shares[a].sname %>
-                                                    <%= shares[a].sdes %>
-                                            </a>
+
+                                                <%= shares[a].sname %>&nbsp;
+                                                <div style="position: relative; left: 30px;"><%= shares[a].sdes %></div>
+                                                    
+
+                                            </p>
                                             <form action="/datavis" method="get">
                                                 <input type="submit" value=<%=shares[a].scode %> name="scode">
                                             </form>

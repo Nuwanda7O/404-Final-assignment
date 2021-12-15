@@ -1,4 +1,4 @@
-
+/* 
 if(code=="000001"){
   var elements = hq_str_sh000001.split(",");
 }
@@ -121,9 +121,11 @@ else if(code=="688009"){
 }
 else if(code=="688010"){
   var elements = hq_str_sh688010.split(",");
-}
+} */
 //////////////////////////////////////////////////////////////
 
+
+var elements = hq_str_sh000001.split(",");
 const app = new Vue({
   el: '#data',
   data: {

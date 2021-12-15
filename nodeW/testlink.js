@@ -546,6 +546,7 @@ app.get('/Intelligent', (req, res, next) => {
     var code = new Array();
     var share = new Array();
     var kind = new Array();
+    var des = new Array();
     if (error) {
       console.info('stderr : ' + stderr);
     }
@@ -554,10 +555,10 @@ app.get('/Intelligent', (req, res, next) => {
     st = std[0]
     sd = std[1]
 
-    st = st.toString().split("\n")
+    st = st.toString().split("\r\n")
 
     sd = sd.toString().split(']')
-    sd = sd[0].toString().split('\n')
+    sd = sd[0].toString().split('\r\n')
     sd = sd.toString().split(' ')
     sd = sd.toString().split(',')
     //清除空字符
@@ -587,14 +588,15 @@ app.get('/Intelligent', (req, res, next) => {
       findshares(code[c].toString(), (docs) => {
         share.push(docs[0].sname)
         kind.push(docs[0].skind)
-
+        des.push(docs[0].sdes)
         if (share.length == rate.length) {
           console.log(share)
           console.log(rate)
           console.log(code)
           console.log(kind)
+          console.log(des)
           //处理完成，传入智能推荐
-          res.render(__dirname + "/public/Intelligent Recommendation.ejs", { share: share, rate: rate, code: code, kind: kind })
+          res.render(__dirname + "/public/Intelligent Recommendation.ejs", { share: share, rate: rate, code: code, kind: kind,des:des })
         }
       });
     }

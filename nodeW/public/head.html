@@ -19,7 +19,6 @@
           $("#5").attr('class','');
         $("#1").attr('class','activeNav');
     }
-    
         if (window.parent.location.pathname=='/Informationdisplay'){
         $("#1").attr('class','');
           $("#2").attr('class','');
@@ -57,14 +56,11 @@
 <body>
 <!--头部开始-->
 <header>
-    <div style="position: absolute;width: 100%;height: 30px;background: #ECECEC">
-        <a style="position: absolute;width: 20%;margin-left: 80%; font-size: 14px;color: #B68555;line-height:30px;">电子合同
-            &nbsp;&nbsp;&nbsp;&nbsp;入金</a>
-    </div>
+
     <!--头部菜单导航-->
     <div class="headerMiddle">
         <div class="hLogo">
-            <a href="first.html">
+            <a href="index.html">
                 <img src="images/logo.png" height="60"/>
             </a>
         </div>
@@ -73,13 +69,13 @@
             <ul>
             
                 <li>
-                    <a id='1' href="first.html"  target="_top">网站首页</a>
+                    <a id='1' href="first.html" class="activeNav" target="_top">网站首页</a>
                 </li>
                 <li>
                     <a id='2' href="Informationdisplay" target="_top">信息展示</a>
                 </li>
                 <li>
-                    <a id='3' href="Intelligent" class="activeNav" target="_top">智能推荐</a>
+                    <a id='3' href="Intelligent" target="_top">智能推荐</a>
                 </li>
                 <li>
                     <a id='4' href="information.html" target="_top">资讯推送</a>

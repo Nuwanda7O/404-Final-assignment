@@ -50,7 +50,7 @@ li {
 }
 .my_fav_list_li{
     padding: 16px 0;
-    font-size: 0;
+    font-size: 12px;
     border-top: 1px solid #e0e0e0;
     list-style: none;
 }
@@ -85,7 +85,4 @@ li {
     vertical-align: bottom;
     cursor: pointer;
     display: inline-block;
-}
-.my_fav_list_a:hover{
-    color: red;
 }

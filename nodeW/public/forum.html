@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="css/myCss.css">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
     <script src="./js/myJS.js"></script>
 </head>
 
@@ -26,10 +27,10 @@
         <div style="background-color: #eee; height: 20px;"></div>
         <ul id="myTab">
             <li>
-                <a href="#">关注</a>
+                <a href="#" style="color: #fe8c00;">关注</a>
             </li>
             <li>
-                <a href="#" style="color: #fe8c00;">推荐</a>
+                <a href="#">推荐</a>
             </li>
             <li>
                 <a href="#">热榜</a>
@@ -39,72 +40,151 @@
             </li>
         </ul>
         <div id="follow" class="myContent">
-            <span>你还没有关注的人</span>
+            <div>
+                <ul class="NameList">        
+                    <li>
+                        <img src="/images/tx2.jpg"/>
+                        <span class="name">布莱恩</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx3.jpg"/>
+                        <span class="name">张卫东</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx4.jpg"/>
+                        <span class="name">古枫</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx1.jpg"/>
+                        <span class="name">陈潇</span>
+
+                    </li>
+                    <li>
+                        <img src="/images/tx5.jpg"/>
+                        <span class="name">阿克蒙德 李察</span>
+
+                    </li>
+                </ul>
+                </div>
         </div>
         <div id="recommend" class="myContent">
             <div class="recommend_item">
+                <div class="question">股票小白如何进场？</div>
+                <div class="answer">股市千变万化，不懂的人根本摸不清看不透，
+                    所以首先还是建议大家先多多学习专业知识，看看专业选手们都
+                    是如何操作的。进场和出场构成一笔完整的交易，不少交易者倾
+                    向于钻研进场点，但实际上出场和进场同为重要，选择好的进场
+                    点和出场点很重要。那么怎么样进场？怎么样出场？这无疑是交
+                    易者面临的一个重要问题。
 
-                <% for(var i=0;i<news.length;i++) { %>
-
-                    <div class="recommend_item">
-                        <div class="question">
-                            <%= news[i].title %>
-                        </div>
-                        <div class="answer">
-                            <%= news[i].content %>
-                        </div>
-                        <div class="myBar">
-
-                            <form action="/input" method="get">
-                                <input class="myinput" type="text" name="input" id="email" required>
-                                <button type="submit" name="report" value="report"
-                                    class="myremark">&nbsp;&nbsp;发表&nbsp;&nbsp;</button>
-                            </form>
-                            <div class="remarklogo">评论区</div>
-                            <ul class="myremarkshow">
-                                <% for(var i=0;i<forum.length;i++) { %>
-                                    <li>
-                                        <%= forum[i].account %>
-                                            <%= forum[i].opinion%>
-                                    </li>
-                                    <%}%>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
                     </div>
-
-                    <% } %>
+                <div class="myBar">
+                    <div class="rating">
+                        <button class="rating__star">☆</button>
+                        <button class="rating__star">☆</button>
+                        <button class="rating__star">★</button>
+                        <button class="rating__star">★</button>
+                        <button class="rating__star">★</button>
+                    </div>
+                    <textarea class="myinput" cols="20" rows="1">快逃!</textarea>
+                    <button class="myremark">&nbsp;&nbsp;发表&nbsp;&nbsp;</button>
+                    <div class="remarklogo">评论区</div>
+                    <ul class="myremarkshow">
+                        <li>？？？？？？？</li>
+                        <li>其实炒股炒到一点程度．比的个是技术，比的是心态．比的是对市场的理解。
+                            这是根有见地的。良好的心态和对市场正确的理解．是克服炒股误区的“灵丹妙药”。</li>
+                        <li>很多散户通过学习，也掌握了很多分析方法和技巧．有一定的水平。可当自己精心
+                            研究了一只股票．准备买进时．只要听旁边的股民随便说说“这只股票不好．就立即
+                            放弃买入，或改买x x x。而当自己选的股涨起来时，只有后悔的份儿了。</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div id="hot" class="myContent">
-                <form action="/addnews" method="get">
-                    <label>
-                        <span>添加标题:</span>
-                        <input id="port" type="text" name="title" placeholder="请输入标题" />
-                    </label>
-
-                    <label>
-                        <span>描述 :</span>
-                        <textarea id="content" name="content" placeholder="请输入内容"></textarea>
-                    </label>
-
-                    <label>
-                        <span>&nbsp;</span>
-                        <input type="submit" name="publish" value="发表">
-                    </label>
-                </form>
+            <div class="recommend_item">
+                <div class="question">基金小白如何进场？</div>
+                <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt, possimus
+                    voluptatibus minus ex voluptas corporis ullam animi cupiditate, dolore necessitatibus aperiam rem
+                    sit omnis sapiente inventore quisquam repellat accusamus?</div>
+                <div class="rating">
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">★</button>
+                </div>
             </div>
-            <div id="video" class="myContent">
-                做不完喽
+            <div class="recommend_item">
+                <div class="question">基金小白如何进场？</div>
+                <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt, possimus
+                    voluptatibus minus ex voluptas corporis ullam animi cupiditate, dolore necessitatibus aperiam rem
+                    sit omnis sapiente inventore quisquam repellat accusamus?</div>
+                <div class="rating">
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">★</button>
+                </div>
             </div>
+            <div class="recommend_item">
+                <div class="question">基金小白如何进场？</div>
+                <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt, possimus
+                    voluptatibus minus ex voluptas corporis ullam animi cupiditate, dolore necessitatibus aperiam rem
+                    sit omnis sapiente inventore quisquam repellat accusamus?</div>
+                <div class="rating">
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">★</button>
+                </div>
+            </div>
+            <div class="recommend_item">
+                <div class="question">基金小白如何进场？</div>
+                <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt, possimus
+                    voluptatibus minus ex voluptas corporis ullam animi cupiditate, dolore necessitatibus aperiam rem
+                    sit omnis sapiente inventore quisquam repellat accusamus?</div>
+                <div class="rating">
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">★</button>
+                </div>
+            </div>
+            <div class="recommend_item">
+                <div class="question">基金小白如何进场？</div>
+                <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt, possimus
+                    voluptatibus minus ex voluptas corporis ullam animi cupiditate, dolore necessitatibus aperiam rem
+                    sit omnis sapiente inventore quisquam repellat accusamus?</div>
+                <div class="rating">
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">☆</button>
+                    <button class="rating__star">★</button>
+                </div>
+            </div>
+
         </div>
-        <!-- <div class="clear"></div> -->
-        <div class="footeriframe">
-            <iframe scrolling="no" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
-                src="footer.html" width="100%">
-            </iframe>
+        <div id="hot" class="myContent">
+            做不出来喽
         </div>
-        <!--網站底部開始-->
-        <!--底部版權聲明-->
+        <div id="video" class="myContent">
+            做不完喽
+        </div>
+    </div>
+    <!-- <div class="clear"></div> -->
+    <div class="footeriframe">
+        <iframe scrolling="no" MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+            src="footer.html" width="100%">
+        </iframe>
+    </div>
+    <!--網站底部開始-->
+    <!--底部版權聲明-->
 </body>
 
 </html>

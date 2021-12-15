@@ -1,43 +1,51 @@
 window.onload = function () {
     var myTab = document.getElementById('myTab');
     var myTabLi = myTab.getElementsByTagName('li');
-    var myTabA = document.querySelectorAll('#myTab li a')
+    var myTabA1 = document.getElementById('gz')
+    var myTabA2 = document.getElementById('tj')
+    var myTabA3 = document.getElementById('fb')
     // console.log(myTab);
     // console.log(myTabLi);
     // console.log(myTabA[0]);
     var follow = document.getElementById('follow');
+    console.log(follow)
     var recommend = document.getElementById('recommend');
     var hot = document.getElementById('hot');
-    var video = document.getElementById('video');
+
     follow.style.display = 'none';
     hot.style.display = 'none';
-    video.style.display = 'none';
+    
+  
 
     //可以设置.index=i 就不用这么麻烦了
-    myTabA[0].addEventListener('click', function () {
-        recommend.style.display = 'block';
-        follow.style.display = 'none';
-        hot.style.display = 'none';
-        video.style.display = 'none';
-    })
-    myTabA[1].addEventListener('click', function () {
+    myTabA1.addEventListener('click', function () {
         recommend.style.display = 'none';
         follow.style.display = 'block';
         hot.style.display = 'none';
-        video.style.display = 'none';
+        myTabA2.style.color='#000000';
+        myTabA3.style.color='#000000';
+        this.style.color='#fe8c00';
+        
     })
-    myTabA[2].addEventListener('click', function () {
+    myTabA2.addEventListener('click', function () {
+        recommend.style.display = 'block';
+        follow.style.display = 'none';
+        hot.style.display = 'none';
+        myTabA1.style.color='#000000';
+        myTabA3.style.color='#000000';
+        this.style.color='#fe8c00';
+      
+    })
+    myTabA3.addEventListener('click', function () {
         recommend.style.display = 'none';
         follow.style.display = 'none';
         hot.style.display = 'block';
-        video.style.display = 'none';
+        myTabA2.style.color='#000000';
+        myTabA1.style.color='#000000';
+        this.style.color='#fe8c00';
+        
     })
-    myTabA[3].addEventListener('click', function () {
-        recommend.style.display = 'none';
-        follow.style.display = 'none';
-        hot.style.display = 'none';
-        video.style.display = 'block';
-    })
+
 
     //排他思想
     for (let i of myTabA) {
